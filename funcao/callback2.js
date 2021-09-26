@@ -11,9 +11,9 @@ for(let i in notas){
 console.log(notasBaixas1);
 
 //com callback
-const notasBaixas2 = notas.filter(function(nota){
+const notasBaixas2 = notas.filter(function(nota){//cria um novo array com base no primeiro, mas não mexe no primeiro
     return nota < 7
-})//cria um novo array com base no primeiro, mas não mexe no primeiro
+})
 
 console.log(notasBaixas2)
 
