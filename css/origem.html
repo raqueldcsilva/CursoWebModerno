@@ -5,8 +5,12 @@
     <meta charset="UTF-8">
     <title>Origem CSS: Externo, Interno e Inline</title>
     <style>
-        /* ... */
+        body{
+            background-color: aquamarine;
+        }
     </style>
+    <link rel="stylesheet" href="css/externo.css"> 
+    <!-- o ultimo a ser processado tem preferencia, porém quando for inline a preferencia é dele, por causa da especificidade -->
 </head>
 
 <body>
