@@ -6,7 +6,24 @@
     <title>Flexbox #03</title>
     <link rel="stylesheet" href="css/tag.css">
     <style>
-        /* ... */
+        .flex-container{
+            display: flex;
+        }
+
+        .flex-container div{
+            flex-basis: 100px;/*Qual a largura de um determinado elemento*/
+            width: 200px;/*vai perder em reação ao basis*/
+        }
+
+        .flex-container div:nth-child(4){
+                /*grow=3 shrink=6 basis=100px*/
+            flex: 3 6 100px;
+        }
+
+        .flex-container{
+            width: 300px;
+            width: 600px;
+        }
     </style>
 </head>
 
