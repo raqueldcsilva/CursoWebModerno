@@ -9,9 +9,24 @@
 
 <body class="conteudo exercicio">
     <div>
-        <a href="https://google.com.br">Google</a>
+        <a espera-um-pouco href="https://google.com.br">Google</a>
+        <!-- onclick="navegarEm5s(event)" -->
     </div>
     <script>
-        // ...
+        function navegarEm5s(e){
+            e.preventDefault()
+            console.log("Saindo em 5s...")
+            setTimeout(() =>{
+                const link = e.target
+                window.location.href = link.href
+            }, 5000)
+        }
+
+        //outra forma de trabalhar com evento
+        /*const a = document.querySelector('a')
+        a.onclick = navegarEm5s*/
+
+        const a = document.querySelector('[espera-um-pouco]')//atributo personalizado
+        a.onclick = navegarEm5s
     </script>
 </body>
