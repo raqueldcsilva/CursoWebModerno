@@ -18,7 +18,10 @@
     "gulp-sass": "4.0.1",
     "gulp-typescript": "4.0.2",
     "gulp-uglify": "3.0.0",
-    "gulp-uglifycss": "1.0.9",
+    "gulp-uglifycss": "^1.1.0",
     "typescript": "2.8.3"
+  },
+  "dependencies": {
+    "node-sass": "^6.0.1"
   }
 }
