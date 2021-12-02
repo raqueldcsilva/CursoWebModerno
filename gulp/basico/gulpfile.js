@@ -16,9 +16,15 @@ const antes2 = cb => {
 
 //função tá recebendo uma callback
 function copiar(cb){
-    gulp.src(['pastaA/arquivo1.txt', 'pastaA/arquivo2.txt'])
-        .pipe(imagePelaMetade())
-        .pipe()
+    //gulp.src(['pastaA/arquivo1.txt', 'pastaA/arquivo2.txt'])
+    
+    gulp.src('pastaA/**/*.txt')//ele ignorará a .json 
+        // .pipe(imagePelaMetade())
+        // .pipe(imageEmPretoEBranco())
+        // .pipe(transformacaoA())
+        // .pipe(transformacaoB())
+        // .pipe(transformacaoC())
+        .pipe(gulp.dest('pastaB'))
     return cb()
 }
 
