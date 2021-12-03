@@ -1,3 +1,7 @@
 body {
-    background-color: red;
+    background-color: #152;
+    background-image: url(../imgs/bootstrap1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
 }
